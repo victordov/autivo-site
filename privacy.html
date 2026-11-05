@@ -34,8 +34,9 @@
     <ul>
       <li>We never receive what you log: your cars, entries, notes, amounts, places, documents and photos. We have no
         servers of our own and cannot see them.</li>
-      <li>The app sends anonymous usage statistics and crash reports to PostHog, under a random ID. You can turn them off
-        in Settings &rsaquo; Your data &rsaquo; Share usage statistics.</li>
+      <li>The app sends anonymous usage statistics and crash reports (first-party analytics, to check that the app works)
+        to PostHog, under a random ID. You can turn them off in Settings &rsaquo; Your data &rsaquo; Share usage
+        statistics.</li>
       <li>There are no accounts, no advertising and no tracking across other companies' apps or websites.</li>
       <li>Your cars, entries, documents and photos are stored on your iPhone. With Autivo Plus you can choose to sync
         them through your own private iCloud, which we cannot access.</li>
@@ -83,8 +84,11 @@
     with your data as described above.</p>
 
   <h2 id="analytics">Usage statistics and crash reports</h2>
-  <p>To find out which features are used and to fix crashes, the app sends anonymous usage statistics to PostHog
-    (PostHog Inc.), an analytics service that processes them for us. What is sent:</p>
+  <p>Autivo uses <strong>first-party analytics</strong>: anonymous usage statistics that tell us whether the app works
+    (crashes and errors) and which of its features are used, so we can fix and improve it. They are about the app, not
+    about you: they are never used for advertising, never sold, and never combined with data from other companies' apps
+    or websites, which is what Apple and privacy laws call tracking. PostHog (PostHog Inc.) processes them for us. What
+    is sent:</p>
   <ul>
     <li>named events, for example "an entry was logged" with its type only (fill-up, charge, repair or expense),
       "a trip started", the onboarding steps, and the steps of opening the Plus screen and buying;</li>
@@ -96,9 +100,10 @@
   <p>What is never sent: anything you type or log, such as car names, number plates, VINs, notes, amounts, stations,
     garages, places, documents, photos or receipt scans, and your location. The statistics are not linked to your name,
     email or Apple Account, and we don't build a profile of you. As with any internet request, PostHog's servers see
-    your device's IP address; the app tells PostHog not to work out a location from it, and our PostHog project is set
-    to discard it. The data is stored by PostHog in the European Union and kept only as long as it helps improve the app.
-    PostHog's handling is described in the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
+    your device's IP address; the app tells PostHog not to work out a location from it. The statistics are stored by
+    PostHog in the United States, together with those of our other apps and labelled with the app's name, and kept only
+    as long as they help us keep the apps working. PostHog's handling is described in the
+    <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
   <p>You can turn this off at any time in <strong>Settings &rsaquo; Your data &rsaquo; Share usage statistics</strong>.
     When it is off, the app sends no usage statistics or crash reports. We rely on our legitimate interest in keeping
     the app working and improving it (GDPR Art. 6(1)(f)), with this switch as your way to object.</p>
