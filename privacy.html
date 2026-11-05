@@ -23,20 +23,25 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective 14 October 2026</p>
+  <p class="muted">Effective 5 November 2026</p>
 
   <p>This policy explains how <strong>Autivo</strong> ("Autivo", "the app"), developed by Victor Dovgaliuc
-    ("we", "us"), handles information. The short version: we don't collect it.</p>
+    ("we", "us"), handles information. The short version: what you log stays on your iPhone. The app sends anonymous
+    usage statistics and crash reports, which you can turn off, and purchase records needed to unlock Autivo Plus.</p>
 
   <div class="summary">
     <strong>In short</strong>
     <ul>
-      <li>We do not collect, store or receive any personal data. We have no servers and cannot see what you enter.</li>
-      <li>The app has no accounts, analytics, advertising or tracking, and uses no third-party SDKs.</li>
+      <li>We never receive what you log: your cars, entries, notes, amounts, places, documents and photos. We have no
+        servers of our own and cannot see them.</li>
+      <li>The app sends anonymous usage statistics and crash reports to PostHog, under a random ID. You can turn them off
+        in Settings &rsaquo; Your data &rsaquo; Share usage statistics.</li>
+      <li>There are no accounts, no advertising and no tracking across other companies' apps or websites.</li>
       <li>Your cars, entries, documents and photos are stored on your iPhone. With Autivo Plus you can choose to sync
         them through your own private iCloud, which we cannot access.</li>
       <li>Receipts and documents are read on your iPhone and are never uploaded.</li>
-      <li>Purchases are processed by Apple. We never receive your payment details.</li>
+      <li>Purchases are processed by Apple and recorded by RevenueCat under an anonymous ID. We never receive your name,
+        Apple Account or payment details.</li>
     </ul>
   </div>
 
@@ -77,12 +82,43 @@
     the text read from them are never uploaded, and neither we nor anyone else receive them. Scans you keep are stored
     with your data as described above.</p>
 
+  <h2 id="analytics">Usage statistics and crash reports</h2>
+  <p>To find out which features are used and to fix crashes, the app sends anonymous usage statistics to PostHog
+    (PostHog Inc.), an analytics service that processes them for us. What is sent:</p>
+  <ul>
+    <li>named events, for example "an entry was logged" with its type only (fill-up, charge, repair or expense),
+      "a trip started", the onboarding steps, and the steps of opening the Plus screen and buying;</li>
+    <li>crash reports and short descriptions of errors (for example "the backup couldn't be saved");</li>
+    <li>technical details: app version, device model, iOS version and language;</li>
+    <li>a random ID created the first time the app is opened, so that events from the same install can be counted
+      together.</li>
+  </ul>
+  <p>What is never sent: anything you type or log, such as car names, number plates, VINs, notes, amounts, stations,
+    garages, places, documents, photos or receipt scans, and your location. The statistics are not linked to your name,
+    email or Apple Account, and we don't build a profile of you. As with any internet request, PostHog's servers see
+    your device's IP address; the app tells PostHog not to work out a location from it, and our PostHog project is set
+    to discard it. The data is stored by PostHog in the European Union and kept only as long as it helps improve the app.
+    PostHog's handling is described in the <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
+  <p>You can turn this off at any time in <strong>Settings &rsaquo; Your data &rsaquo; Share usage statistics</strong>.
+    When it is off, the app sends no usage statistics or crash reports. We rely on our legitimate interest in keeping
+    the app working and improving it (GDPR Art. 6(1)(f)), with this switch as your way to object.</p>
+
   <h2>In-app purchases and subscriptions</h2>
   <p>Autivo Plus is sold through the App Store and purchases are processed by Apple. We never receive your name, Apple
-    Account, payment card or billing details. The app receives a signed confirmation from Apple that a purchase
-    succeeded and checks it on your device with Apple's StoreKit to unlock Plus; no server of ours is involved. You can
-    manage or cancel a subscription in your device's Settings under your name &rsaquo; Subscriptions. Apple's handling of
-    this information is described in the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+    Account, payment card or billing details.</p>
+  <p>To know whether you have Plus, including after a renewal, a refund or on a new device, the app uses RevenueCat
+    (RevenueCat Inc.), a service that keeps purchase records for us. RevenueCat receives from the app and from Apple: which
+    Autivo Plus product was bought, its price and currency, the purchase, trial, renewal, cancellation and refund dates,
+    Apple's transaction identifiers, the App Store country, an anonymous ID that RevenueCat creates for this install, and
+    technical details (app version, device model, iOS version) and your IP address, as with any internet request. The app
+    does not give RevenueCat any advertising or device identifier. RevenueCat also passes these purchase events to our
+    PostHog project under the same anonymous ID, so we can see, for example, how many free trials become subscriptions.
+    RevenueCat's handling is described in the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.
+    The app also checks purchases on your device with Apple's StoreKit, so Plus keeps working if RevenueCat can't be
+    reached.</p>
+  <p>You can manage or cancel a subscription in your device's Settings under your name &rsaquo; Subscriptions. Apple's
+    handling of this information is described in the <a href="https://www.apple.com/legal/privacy/">Apple Privacy
+    Policy</a>.</p>
 
   <h2>Permissions</h2>
   <p>Autivo asks for a permission only when you first use the feature that needs it, and the rest of the app works
@@ -119,16 +155,18 @@
       entirely, use iCloud storage management in your device's Settings (your name &rsaquo; iCloud).</li>
     <li>Backup and export files you created, and your own device backups, are yours to keep or delete.</li>
   </ul>
-  <p>We hold no copy of your data, so we cannot recover it for you.</p>
+  <p>We hold no copy of what you log, so we cannot recover it for you.</p>
 
   <h2>Children</h2>
-  <p>Autivo is not directed at children. Because the app does not collect personal data from anyone, it does not
-    collect personal data from children under 13 (or the equivalent minimum age in your region).</p>
+  <p>Autivo is not directed at children under 13 (or the equivalent minimum age in your region). The app collects no
+    information that identifies anyone, only the anonymous statistics and purchase records described above.</p>
 
   <h2>Your rights</h2>
-  <p>Privacy laws such as the GDPR give you rights over personal data that a company holds about you. Since we hold no
-    personal data about you, there is nothing for us to access, correct, export or delete. You stay in control in the
-    app: you can export everything with a backup and delete anything at any time.</p>
+  <p>Privacy laws such as the GDPR give you rights over personal data that a company holds about you, including access,
+    correction, deletion and objection. What you log never reaches us; you can export it with a backup and delete it at
+    any time in the app. The usage statistics and purchase records are tied only to random IDs, not to your name or Apple
+    Account, so we usually can't tell which records are yours. You can stop the statistics at any time in Settings, and
+    you can write to us at the address below with any request; we will answer within one month.</p>
 
   <h2>Changes to this policy</h2>
   <p>If Autivo's data practices change, for example if a future version adds a feature that needs to collect data, we
