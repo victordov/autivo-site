@@ -23,7 +23,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective 5 November 2026</p>
+  <p class="muted">Effective 7 November 2026</p>
 
   <p>This policy explains how <strong>Autivo</strong> ("Autivo", "the app"), developed by Victor Dovgaliuc
     ("we", "us"), handles information. The short version: what you log stays on your iPhone. The app sends anonymous
@@ -67,14 +67,20 @@
     <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. iCloud sync is off unless you turn it on, and
     you can turn it off at any time in Autivo's Settings.</p>
 
-  <h2 id="exchange-rates">Exchange rates (Autivo Plus)</h2>
-  <p>When you have Autivo Plus and log an amount in a currency other than your home currency, the app downloads the
-    day's reference exchange rates from the public <a href="https://frankfurter.app">Frankfurter</a> service
-    (frankfurter.app), which publishes European Central Bank data. The request contains only currency codes (for
-    example "EUR"). No amounts, entries, identifiers or other personal data are sent. As with any request on the
+  <h2 id="exchange-rates">Exchange rates</h2>
+  <p>The app downloads reference exchange rates from the public <a href="https://frankfurter.app">Frankfurter</a>
+    service (frankfurter.app), which publishes European Central Bank data, in two cases:</p>
+  <ul>
+    <li>with Autivo Plus, when you log an amount in a currency other than your home currency (the rate for the entry's
+      date);</li>
+    <li>for everyone, when you change your home currency after logging entries, so the app can offer to convert them
+      at today's rate.</li>
+  </ul>
+  <p>The request contains only the two currency codes (for example "RON" and "EUR") and, for an entry dated in the
+    past, that date. No amounts, entries, identifiers or other personal data are sent. As with any request on the
     internet, the service can see your device's IP address; we don't operate it and receive nothing from it. Rates are
-    kept on your device for about a day so they don't have to be downloaded again. Without Plus, you type rates yourself
-    and no request is made.</p>
+    kept on your device so they don't have to be downloaded again. Otherwise, without Plus, you type rates yourself and
+    no request is made.</p>
 
   <h2>Receipt and document scanning</h2>
   <p>When you scan a receipt, invoice or document, the camera image is processed on your device. Text is read with
@@ -90,14 +96,30 @@
     or websites, which is what Apple and privacy laws call tracking. PostHog (PostHog Inc.) processes them for us. What
     is sent:</p>
   <ul>
-    <li>named events, for example "an entry was logged" with its type only (fill-up, charge, repair or expense),
-      "a trip started", the onboarding steps, and the steps of opening the Plus screen and buying;</li>
+    <li>named events, each with only the details listed here:
+      <ul>
+        <li>the app was installed, updated, opened or closed, and the first time it was opened on a given day, with the
+          number of days since it was installed;</li>
+        <li>the onboarding steps, and how onboarding ended (a car added, skipped, a backup restored, or the sample
+          garage opened);</li>
+        <li>a car was added, with its fuel type (for example petrol or electric) and whether it is the first;</li>
+        <li>an entry was logged, with its type (fill-up, charge, repair or expense), whether a receipt scan filled it in,
+          and whether it was new or edited;</li>
+        <li>a trip started or ended, with whether a km reading was given and whether it was ended from the Lock
+          Screen;</li>
+        <li>a reminder was marked done, with its kind (for example oil change or tyres);</li>
+        <li>the sample garage was opened or closed, and from where;</li>
+        <li>whether you have Autivo Plus, the Plus screen was opened (from where, and for which feature), and the steps
+          of buying or restoring (which plan, its price and currency, and the result);</li>
+      </ul>
+    </li>
     <li>crash reports and short descriptions of errors (for example "the backup couldn't be saved");</li>
     <li>technical details: app version, device model, iOS version and language;</li>
     <li>a random ID created the first time the app is opened, so that events from the same install can be counted
       together.</li>
   </ul>
-  <p>What is never sent: anything you type or log, such as car names, number plates, VINs, notes, amounts, stations,
+  <p>What is never sent: anything you type, and the content of what you log, such as car names, makes and models,
+    number plates, VINs, notes, amounts, odometer readings, stations,
     garages, places, documents, photos or receipt scans, and your location. The statistics are not linked to your name,
     email or Apple Account, and we don't build a profile of you. As with any internet request, PostHog's servers see
     your device's IP address; the app tells PostHog not to work out a location from it. The statistics are stored by
